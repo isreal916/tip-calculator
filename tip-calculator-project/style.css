@@ -1,0 +1,204 @@
+@font-face {
+    font-family: space-mono;;
+    src: url(space-mono/SpaceMono-Regular.ttf);
+}
+@font-face {
+    font-family: space-mono;
+    src: url(space-mono/SpaceMono-Bold.ttf);
+}
+@font-face {
+    font-family: space-mono;
+    src: url(space-mono/SpaceMono-Italic.ttf);
+}
+@font-face {
+    font-family: space-mono;
+    src: url(space-mono/SpaceMono-Regular.ttf);
+}
+body{
+    background-color:   hsl(185, 41%, 84%);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    font-family: space-mono;
+    flex-direction: column;
+}
+#logo{
+    font-weight: 500;
+    
+}
+.main-container{
+    align-self: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 12px;
+    width:850px;
+    flex-direction: row;
+    height:450px;
+    margin:auto;
+    
+}
+
+.container *{
+    margin: 0 0 0 23px;
+}
+#bill{
+ width:290px;
+ padding:5px;
+ border:none;
+ background-color: hsl(189, 41%, 97%);
+ border-radius: 5px;
+ text-align: right;
+ background-image: url(./images/icon-dollar.svg);
+ background-repeat: no-repeat;
+ background-position: 5px;
+ outline:none;
+ font-family: space-mono;
+ font-weight:800;
+ font-size: 24px;
+
+}
+#bill:focus{
+    border:1px solid hsl(183, 100%, 15%)
+}
+
+#inp-desc{
+    color:hsl(184, 14%, 56%);
+    margin:45px 0 0 35px;
+    font-weight: 800;
+    font-size: 15px;
+  
+}
+#button button{
+background: hsl(183, 100%, 15%);
+color:white;
+text-align: center;
+width:120px;
+border-radius: 8px;
+padding:13px;
+margin:5px;
+border: none;
+font-family: space-mono;
+font-weight: 600;
+font-size: 16px;
+
+}
+#button button:hover{
+    background-color:hsl(189, 41%, 97%);
+    color:black;
+}
+#button{
+    width:500px
+}
+#button #spec{
+    background-color:  hsl(172, 67%, 45%);
+    color:black;
+}
+
+
+#num-people{
+    width:290px;
+ padding:5px;
+ border:none;
+ background-color: hsl(189, 41%, 97%);
+ border-radius: 5px;
+ text-align: right;
+ background-image: url(./images/icon-person.svg);
+ background-repeat: no-repeat;
+ background-position: 5px;
+ outline:none;
+ font-family: space-mono;
+ font-weight:800;
+ font-size: 24px;
+}
+.container-sub{
+    float:right;
+    background-color:hsl(183, 100%, 15%) ;
+    width:350px;
+    height:400px;
+    margin:  -15px 34px 0 450px;
+    position :absolute;
+    border-radius: 15px;
+}
+#side{
+    margin: 45px 0 0 0
+}
+#side h3{
+color:white;
+font-family: space-mono;
+margin-top: 56px;
+
+}
+#side p{
+    color:hsl(184, 14%, 56%);
+}
+#side h1{
+    float:right;
+    color:hsl(172, 67%, 45%);
+    margin:-42px 19px 0 0
+}
+.container-sub button[type=reset]{
+    background-color:hsl(172, 67%, 45%) ;
+    width:70%;
+    padding:10px;
+    margin:100px 0 0 45px ;
+    border:none;
+    border-radius: 8px;
+    text-align: center;
+    font-family: space-mono;
+    font-weight: 900;
+}
+.container-sub button[type=reset]:hover{
+    background-color: hsl(185, 41%, 84%);
+}
+#custom{
+    background:  hsl(185, 41%, 84%);
+color:black;
+text-align: center;
+width:100px;
+border-radius: 8px;
+padding:13px;
+margin:5px;
+border: none;
+font-family: space-mono;
+font-weight: 600;
+font-size: 16px;
+outline:none;
+text-align: right;
+}
+#custom:focus{
+    background-color: white;
+    border:1px solid hsl(183, 100%, 15%)
+}
+#error{
+    color:red;
+    margin-left:200px;
+   display:none;
+    position: absolute;
+}
+.attribution { font-size: 5px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media screen and (max-width:415px) {
+    .container{
+         flex-direction:column;
+         float: left;
+         
+   
+        
+    }
+    .container-sub{
+        flex-direction: column;
+        float:left;
+        margin-top: 430px   ;
+        margin-left: -8px;
+        position:absolute;
+        width:450px
+    }
+    .main-container{
+        flex-direction: column;
+        /* width: 100%; */
+        float: left;
+        width:450px
+    }
+}
+
+

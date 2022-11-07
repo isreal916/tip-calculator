@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <img src="./images/logo.svg" alt="">
+   <div class="main-container">
+    <div class="container">
+        <div class="container-sub">
+            <div id="side">
+             <h3>Tip Amount</h3>
+             <p>/person</p>
+             <h1 id="price">$0.00</h1>
+            </div>
+            <div id="side">
+                <h3>Total</h3> 
+                <p>/person</p>
+                <h1 id="total">$0.00</h1>
+               </div>
+               <button id="reset" type="reset">Reset</button>
+        </div>
+        <div id="flex">
+        <p id="inp-desc">Bill</p>
+       <input  type="text"  id="bill">
+  </div>
+  <div id="button">
+  <p id="inp-desc">%select tip</p>
+  <button id="but-1" value="5">5%</button>
+  <button id="but-2" value="10">10%</button>
+  <button id="but-3" value="15" id="spec">15%</button>
+  <button  id="but-4" value="25  ">25%</button>
+  <button id="but-5" value="50">50%</button>
+  <input id="custom"  type="text"  placeholder="Custom">
+</div>
+<div id="flex">
+    <p id="error">cant be zero</p>
+    <p id="inp-desc">Number of People</p>
+    
+   <input type="text"   id="num-people">
+</div> 
+    </div>
+   </div> 
+   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+   Coded by <a href="#">kanisCode</a>.
+    <script src="./jquery-1.8.3.js" ></script>
+   <script src="script.js"></script>
+  
+</body>
+</html>
